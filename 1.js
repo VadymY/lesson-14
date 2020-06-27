@@ -37,7 +37,6 @@ function CleanerRobot(
         console.log(
             `Начинаю процесс уборки. Время уборки: ${cleaningTime} часов.`,
         );
-        this.reduceEnergy();
         this._timerIdInterval = setInterval(this.reduceEnergy, 500);
         /* Для удобства время уборки сокращено до формата 1 час = 1 секунда */
         this._timerId = setTimeout(onReady, cleaningTime * 1000);
